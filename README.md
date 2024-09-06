@@ -109,4 +109,4 @@ This project demonstrated how data analysis and visualization can play a key rol
 
 ---
 
-This README provides a complete and professional overview of your Splunk project. You can now save this as `README.md` and upload it to your GitHub repository along with your other project files. Let me know if you need further adjustments!
+This README provides a complete and professional overview of your Splunk project.
