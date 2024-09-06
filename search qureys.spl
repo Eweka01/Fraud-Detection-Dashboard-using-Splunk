@@ -1,0 +1,14 @@
+# Count by Category, Fraudulent transactions, Age, and Merchant
+sourcetype="fraud_dectection.csv" | stats count by category, fraudulent, age, merchant
+
+# Fraud Detected by Age, Category, Step (Month), and Gender
+sourcetype="fraud_dectection.csv" fraud="1" | stats count by age, category, step, gender
+
+# Which Gender Performed the Most Fraudulent Activities and in What Category
+sourcetype="fraud_dectection.csv" fraud="1" | stats count by gender, category
+
+# Which Age Group Performed the Most Fraudulent Activities and to What Merchant
+sourcetype="fraud_dectection.csv" fraud="1" | stats count by age, merchant
+
+# Fraud Detected Over Time by Month
+sourcetype="fraud_dectection.csv" fraud="1" | timechart count by step
